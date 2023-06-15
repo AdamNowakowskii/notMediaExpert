@@ -1,0 +1,110 @@
+main {
+    display: flex;
+}
+.left-nav-bar-container {
+    width: 25rem;
+    height: 61.7rem;
+}
+.phone-container {
+    width: 115rem;
+}
+.left-nav-bar-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.left-nav-bar-category-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left-nav-bar-category-list * {
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    background-color: black;
+    color: yellow;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.phone-inof {
+    margin: 0.5rem;
+    height: 24rem;
+    padding: 0.5rem;
+    border: solid rgb(194, 189, 189);
+}
+.phone-inof h1 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.phone-cost {
+    width: 12rem;
+    height: 20rem;
+    float: right;
+    margin-right: 3rem;
+}
+.phone-inof img {
+    width: 14rem;
+}
+.phone-specification {
+    float: left;
+    display: flex;
+}
+.phone-specification img {
+    margin-top: 1rem;
+}
+.phone-specification p {
+    margin-left: 0.5rem;
+    flex-direction: column;
+}
+.phone-inof h1:first-child {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+#loan  {
+    color:rgb(190, 48, 48);
+}
+#payment-in-loan{
+    border: solid black 0.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.delivery , .location-point , .time-icon {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.delivery img , .location-point img , .time-icon img {
+    width: 2.5rem;
+    margin-right: 0.9rem;
+}
+.time-icon p {
+    color: green;
+}
+.phone-cost  button {
+    border: none;
+    background-color: rgb(252, 252, 10);
+    height: 3rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.order-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    border: solid rgb(0, 0, 116) 0.2rem ;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

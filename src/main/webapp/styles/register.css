@@ -1,0 +1,149 @@
+.navBar {
+    display: flex;
+    color: yellow;
+    width: 100vh;
+    height: 50px;
+    padding: 40px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.logo-Div span {
+    display: inline;
+}
+.register-info span {
+    margin: 2px;
+}
+.logo-Div {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: -17px;
+}
+.search-div, .shopping-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    height: 31px;
+    padding: 8px;
+}
+main{
+    display: flex;
+}
+form {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-div {
+    border: solid whitesmoke;
+    padding: 30px;
+}
+.form-control {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+}
+.form-control input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    height: 100%;
+    padding: 0 15px;
+    transition: 0.4s;
+}
+
+.form-control input:valid + label {
+    top: -0.45rem;
+    left: 10px;
+    font-size: 0.9rem;
+    z-index: 100;
+    width: auto;
+    height: 0.9rem;
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+input:not(:focus) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-control input:focus + label {
+    top: -0.45rem;
+    left: 10px;
+    font-size: 0.9rem;
+    z-index: 100;
+    width: auto;
+    height: 0.9rem;
+    padding: 0 10px;
+    color: #3484f0;
+}
+
+.form-control input:focus ~ div.border-around {
+    border: 2px solid #3484f0;
+}
+
+.form-control label {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 80%;
+    height: 100%;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    pointer-events: none;
+}
+.form-control div.border-around {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    padding-right: 25px;
+    top: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.submit  {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit input {
+    border-radius: 8px;
+    color: black;
+    border: none;
+    background-color: yellow;
+    font-size: large;
+}
+p{
+    color:black;
+}
+.register-info  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: yellow;
+}
+#a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

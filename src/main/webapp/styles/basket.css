@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.photo-quantity {
+    height: 300px;
+    width: 30vw;
+}
+.photo-quantity img {
+    width: 180px;
+    padding: 10px;
+    height: 180px;
+}
+.photo-quantity span {
+    margin-left: 30px;
+}
+.description{
+    height: 300px;
+    width: 30vw;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.price {
+    height: 300px;
+    width: 30vw;
+}
+.price :last-child {
+    margin-top: 8vh;
+    padding: 30px;
+    float:right;
+}
+.price :first-child {
+    margin-top: -0.2rem;
+    margin-right: 0.2rem;
+    width: 20px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    float:right;
+    background-color: white;
+}
+#trashCan {
+    height: 0;
+}
+#product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 10rem;
+}
+.photo-quantity input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 15px;
+    background-color: white;
+}
+.products-container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15vh ;
+    margin-right: 15vh;
+    padding: 10px;
+    border: solid 2px #dad6d6;
+}
+
