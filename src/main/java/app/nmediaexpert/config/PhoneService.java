@@ -25,7 +25,8 @@ public class PhoneService {
                     p.getBattery(),
                     p.getRam(),
                     p.getPhonePrice(),
-                    p.getPhoneCategory()
+                    p.getPhoneCategory(),
+                    p.getPhoneName()
             );
         }
     }

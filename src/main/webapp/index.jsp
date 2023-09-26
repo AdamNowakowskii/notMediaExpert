@@ -22,14 +22,17 @@
                </form>
             </c:forEach>
         </div>
+        <div class="ad">
+            <a href="https://www.wakacje.pl"><img src="images/logo.png"></a>
+        </div>
     </div>
     <div class="phone-container">
         <c:forEach var="allPhones" items="${requestScope.allPhone}">
         <div class="phone-inof">
                 <div class="phone-cost">
-                    <h1 id="price">${allPhones.phonePrice}</h1>
-                    <p id="loan">${allPhones.loanPrice()} x 20 Loan  0 % PRSO </p>
-                    <p id="payment-in-loan">in installments ${allPhones.discountLoanPrice()} <br>
+                    <h1 id="price">${allPhones.phonePrice} $</h1>
+                    <p id="loan">${allPhones.loanPrice()} x 20 Loan  0 % RRSO </p>
+                    <p id="payment-in-loan">In installments ${allPhones.discountLoanPrice()} <br>
                         first installments is free!!
                     </p>
                     <div class="delivery">
@@ -45,21 +48,23 @@
                         <p>Available in shop</p>
                     </div>
                     <form method="get" action="${pageContext.request.contextPath}/addToCart">
-                        <button name="addToShoppingBasket" value="${allPhones.getIdPhone()}">To shoppingBasket </button>
+                        <button name="addToShoppingBasket" value="${allPhones.getIdPhone()}">To shopping Basket </button>
                     </form>
                     <div class="order-phone">
                         <p>Order By Phone</p>
-                        <p>XXX-XXX-XXX</p>
+                        <p>452-213-621</p>
                     </div>
                 </div>
-                    <h1>${allPhones.description}</h1>
-                    <p>Id Phone : ${allPhones.idPhone}</p>
+                    <h1 class="phone-name">${allPhones.phoneName}</h1>
+                    <p>Id Phone: ${allPhones.idPhone}</p>
                     <div class="phone-specification">
                         <img src="${pageContext.request.contextPath}/images${allPhones.phoneUrl}" alt="">
                         <div class="technical-detalis">
-                            <p>screen:  ${allPhones.screen} </p>
-                            <p>battery : ${allPhones.battery} </p>
-                            <p>ram :${allPhones.ram} </p>
+                            <p>${allPhones.description} </p>
+                            <br>
+                            <p>Screen:  ${allPhones.screen} </p>
+                            <p>Battery: ${allPhones.battery} </p>
+                            <p>Ram: ${allPhones.ram} </p>
                         </div>
                 </div>
         </div>

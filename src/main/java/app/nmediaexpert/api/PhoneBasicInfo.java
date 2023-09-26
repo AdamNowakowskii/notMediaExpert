@@ -10,8 +10,9 @@ public class PhoneBasicInfo {
     private String ram;
     private int phonePrice;
     private String phoneCategory;
+    private String phoneName;
 
-    public PhoneBasicInfo(String description, int idPhone, String phoneUrl, String screen, String battery, String ram, int phonePrice, String phoneCategory) {
+    public PhoneBasicInfo(String description, int idPhone, String phoneUrl, String screen, String battery, String ram, int phonePrice, String phoneCategory, String phoneName) {
         this.description = description;
         this.idPhone = idPhone;
         this.phoneUrl = phoneUrl;
@@ -20,6 +21,15 @@ public class PhoneBasicInfo {
         this.ram = ram;
         this.phonePrice = phonePrice;
         this.phoneCategory = phoneCategory;
+        this.phoneName = phoneName;
+    }
+
+    public String getPhoneName() {
+        return phoneName;
+    }
+
+    public void setPhoneName(String phoneName) {
+        this.phoneName = phoneName;
     }
 
     public String getDescription() {

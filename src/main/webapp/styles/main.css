@@ -7,6 +7,7 @@ main {
 }
 .phone-container {
     width: 115rem;
+    background-color:#b5adac;
 }
 .left-nav-bar-container h1 {
     display: flex;
@@ -34,11 +35,31 @@ main {
     margin: 0.5rem;
     height: 24rem;
     padding: 0.5rem;
-    border: solid rgb(194, 189, 189);
+    border: solid black;
+    background-color: white;
+}
+.ad {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad img {
+    width: 40vh;
+    transform: rotate(-0.25turn);
+    margin-top: 188px;
 }
 .phone-inof h1 {
-    font-size: 1rem;
+    font-size: 2rem;
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.phone-name {
+    position: absolute;
 }
 .phone-cost {
     width: 12rem;
@@ -47,7 +68,13 @@ main {
     margin-right: 3rem;
 }
 .phone-inof img {
-    width: 14rem;
+    width: 16rem;
+}
+.technical-detalis {
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
 }
 .phone-specification {
     float: left;
